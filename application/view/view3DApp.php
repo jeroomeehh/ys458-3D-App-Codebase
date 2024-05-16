@@ -161,8 +161,8 @@
                       </ul>
                     </div>  
                     <div class="card-body">
-                    <!-- Coke X3D model -->
-                    <div id="coke">
+                      <!-- Coke X3D model -->
+                      <div id="coke">
                         <div id="x3dModelTitle_coke" class="card-title drinksText"></div>
                         <!-- Place the X3D code here -->
                         <div class="model3D">
@@ -173,9 +173,9 @@
                             </x3d>
                         </div> 
                         <div id="x3dCreationMethod_coke" class="card-text drinksText"></div>
-                    </div>
-                    <!-- Sprite X3D model -->
-                    <div id="sprite" style="display:none;">
+                      </div>
+                      <!-- Sprite X3D model -->
+                      <div id="sprite" style="display:none;">
                         <div id="x3dModelTitle_sprite" class="card-title drinksText"></div>
                         <!-- Place the X3D code here -->
                         <div class="model3D">
@@ -186,9 +186,9 @@
                             </x3d>
                         </div> 
                         <div id="x3dCreationMethod_sprite" class="card-text drinksText"></div>
-                    </div>
-                    <!-- Fanta X3D model -->
-                    <div id="fanta" style="display:none;">
+                      </div>
+                      <!-- Fanta X3D model -->
+                      <div id="fanta" style="display:none;">
                         <div id="x3dModelTitle_fanta" class="card-title drinksText"></div>
                         <!-- Place the X3D code here -->
                         <div class="model3D">
@@ -201,39 +201,49 @@
                             </x3d>
                         </div> 
                         <div id="x3dCreationMethod_fanta" class="card-text drinksText"></div>
-                    </div>
-                    <div id="interaction">
-                      <div class="camera-btns">
-                        <div class="btn-group">
-                          <a class="btn btn-sm btn-primary disabled" href="#" id="x3dCameraTitle"></a>
-                          <a class="btn btn-sm btn-success" href="#" onclick="cameraFront();">Front</a>
-                          <a class="btn btn-sm btn-success" href="#" onclick="cameraBack();">Back</a>
-                          <a class="btn btn-sm btn-success" href="#" onclick="cameraLeft();">Left</a>
-                          <a class="btn btn-sm btn-success" href="#" onclick="cameraRight();">Right</a>
-                          <a class="btn btn-sm btn-success" href="#" onclick="cameraTop();">Top</a>
-                          <a class="btn btn-sm btn-success" href="#" onclick="cameraBottom();">Bottom</a>
-                        </div>
-                        <div id="x3dCameraSubtitle"  class="card-text drinksText"></div>
                       </div>
-                      <div class="camera-btns">
-                        <div class="btn-group">
-                          <a class="btn btn-sm btn-primary disabled" href="#" id="x3dRenderTitle"></a>
-                          <a class="btn btn-sm btn-warning" href="#" onclick="wireframe();">Wire</a>
-                          <a class="btn btn-sm btn-warning" href="#" onclick="headlight();">Light</a>
-                          <a class="btn btn-sm btn-warning" href="#" onclick="changeTexture();">Texture</a>
-                        </div>
-                        <div id="x3dRenderSubtitle"  class="card-text drinksText"></div>
+                      <!-- Coke Zero Video -->
+                      <div id="zero" style="display:none;">
+                        <div id="x3dModelTitle_zero" class="card-title drinksText"></div>
+                        <!-- Place the X3D code here -->
+                        <div class="video-container">
+                          <iframe width="560" height="315" src="https://www.youtube.com/embed/vHhaO56KmE4?fs=0" frameborder="0" ></iframe>
+                        </div> 
+                        <div id="x3dCreationMethod_zero" class="card-text drinksText"></div>
                       </div>
-                      <div class="camera-btns">
-                        <div class="btn-group">
-                          <a class="btn btn-sm btn-primary disabled" href="#" id="x3dAnimationTitle"></a>
-                          <a href="#" class="btn btn-sm btn-secondary" onclick="startAnimation();">Start</a>
-                          <a href="#" class="btn btn-sm btn-secondary" onclick="stopAnimation();">Stop</a>
+                      <div id="interaction">
+                        <div class="camera-btns">
+                          <div class="btn-group">
+                            <a class="btn btn-sm btn-primary disabled" href="#" id="x3dCameraTitle"></a>
+                            <a class="btn btn-sm btn-success" href="#" onclick="cameraFront();">Front</a>
+                            <a class="btn btn-sm btn-success" href="#" onclick="cameraBack();">Back</a>
+                            <a class="btn btn-sm btn-success" href="#" onclick="cameraLeft();">Left</a>
+                            <a class="btn btn-sm btn-success" href="#" onclick="cameraRight();">Right</a>
+                            <a class="btn btn-sm btn-success" href="#" onclick="cameraTop();">Top</a>
+                            <a class="btn btn-sm btn-success" href="#" onclick="cameraBottom();">Bottom</a>
+                          </div>
+                          <div id="x3dCameraSubtitle"  class="card-text drinksText"></div>
                         </div>
-                        <div id="x3dAnimationSubtitle"  class="card-text drinksText"></div>
-                      </div>
+                        <div class="camera-btns">
+                          <div class="btn-group">
+                            <a class="btn btn-sm btn-primary disabled" href="#" id="x3dRenderTitle"></a>
+                            <a class="btn btn-sm btn-warning" href="#" onclick="wireframe();">Wire</a>
+                            <a class="btn btn-sm btn-warning" href="#" onclick="headlight();">Light</a>
+                            <a class="btn btn-sm btn-warning" href="#" onclick="changeTexture();">Texture</a>
+                          </div>
+                          <div id="x3dRenderSubtitle"  class="card-text drinksText"></div>
+                        </div>
+                        <div class="camera-btns">
+                          <div class="btn-group">
+                            <a class="btn btn-sm btn-primary disabled" href="#" id="x3dAnimationTitle"></a>
+                            <a href="#" class="btn btn-sm btn-secondary" onclick="loopAnimation();">Play Loop</a>
+                            <a href="#" class="btn btn-sm btn-secondary" onclick="playAnimation();">Play Once</a>
+                            <a href="#" class="btn btn-sm btn-secondary" onclick="stopAnimation();">Stop</a>
+                          </div>
+                          <div id="x3dAnimationSubtitle"  class="card-text drinksText"></div>
+                        </div>
+                      </div>  
                     </div>  
-                  </div>  
                 </div>
             </div>
 
@@ -243,19 +253,30 @@
                     <div class="card-header gallery-header">
                         <ul class="nav nav-tabs card-header-tabs">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Gallery</a>
+                            <a id="navGallery" class="nav-link active" href="#" onclick="selectGallery();">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="navVideo" class="nav-link" href="#" onclick="selectVideo();">Video</a>
                         </li>
                     </div>
                     <div class="card-body">
+                      <div id="galleryBlock">
                         <div class="card-title title_gallery drinksText"></div>
                         <div class="gallery" id="gallery"></div>
                         <div class="card-text description_gallery drinksText"></div>
+                      </div>
+                      <div id="videoBlock" style="display:none;">
+                        <div class="card-title title_video drinksText"></div>
+                        <div class="video" id="video">
+                          <a href="#" onclick="select_video1();"><img class="card-img-top img-thumbnail" src="assets/images/site_images/cokezero.jpg"></a>
+                        </div>
+                        <div class="card-text description_video drinksText"></div>
+                      </div>  
                     </div>
                 </div> <!-- End gallery card -->
             </div> <!-- End gallery column -->
         </div> <!-- End row for X3D Model and Gallery -->
       </div> <!-- End X3D Models and Gallery -->
-  
 
       <!-- Row to hold one card to hold the coke descriptive text, etc.-->
       <div id="cokeDescription" class="row" >
@@ -300,7 +321,6 @@
         </div> <!-- End fanta description contents -->  
     </div>  
 
-
     <!-- Your 3D App footer -->
     <nav id="footerColor" class="navbar navbar-expand-sm footer" style="background-color: rgba(200, 200, 200, 0.8);">
       <div class="container">   
@@ -337,8 +357,6 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <!-- 
-    -->
     <script src="scripts/js/jquery-3.7.1.js"></script>
     <script src="scripts/js/popper.min.js"></script>
     <script src="scripts/js/bootstrap.js"></script>
